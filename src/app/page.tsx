@@ -38,6 +38,7 @@ const Homepage = () => {
             className='w-full bg-transparent h-full resize-none focus:outline-none placeholder:text-lg placeholder:text-white placeholder:tracking-wider placeholder:opacity-80'
             placeholder='Feed me some Markdown 🍕'
             value={source}
+            rows={15}
             autoFocus
             onChange={(e) => setSource(e.target.value)}
           />
