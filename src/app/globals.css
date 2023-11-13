@@ -2,26 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  @apply bg-[#253237] text-[#e0fbfc];
+}
+
+/* hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 96%;               
+  background-color:#FFFF00;
+  height: 1px;
+} */
+
+/* Change the scrollbar to cyan color */
+::-webkit-scrollbar {
+  width: 0.2rem;
+  height: 0.2rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #253237;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-cyan-300 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b8d8d8;
 }
